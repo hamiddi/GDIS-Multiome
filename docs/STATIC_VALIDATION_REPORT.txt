@@ -1,0 +1,54 @@
+Canonical Python scripts: 47
+SYNTAX PASS  00_preflight.py
+SYNTAX PASS  01_download_gse275562.py
+SYNTAX PASS  02_phase_f0_audit.py
+SYNTAX PASS  03_phase_f1_batch_representation_qc.py
+SYNTAX PASS  04_phase_f1b_representation_rescue_qc.py
+SYNTAX PASS  05_phase_f2_common_trajectory.py
+SYNTAX PASS  06_phase_f3_gdis_rna_atac.py
+SYNTAX PASS  07_phase_f3b_peak_topology_qc.py
+SYNTAX PASS  08_phase_f3c_transition_anchored_pairing_qc.py
+SYNTAX PASS  09_phase_f4_event_specific_cmil_bootstrap.py
+SYNTAX PASS  10_phase_f4b_peak_stability_diagnostics.py
+SYNTAX PASS  11_phase_f4c_event_region_timing_diagnostics.py
+SYNTAX PASS  12_phase_f5_cross_modal_alignment_null.py
+SYNTAX PASS  13_phase_f6a_external_metadata_acquisition.py
+SYNTAX PASS  14_phase_f6b_external_dataset_audit_corrected.py
+SYNTAX PASS  15_phase_f7_external_archive_pairing_qc.py
+SYNTAX PASS  16_phase_f7b_external_barcode_universe_diagnostic.py
+SYNTAX PASS  17_phase_f8_geo_native_reconstruction_qc_dynamicbins.py
+SYNTAX PASS  18_phase_f8b_external_representation_rescue_qc.py
+SYNTAX PASS  19_phase_f8c_external_primary_arm_freeze_qc.py
+SYNTAX PASS  20_phase_f9_external_common_trajectory.py
+SYNTAX PASS  21_phase_f9b_external_trajectory_topology_diagnostic.py
+SYNTAX PASS  22_phase_f10_shareseq_acquisition_canonical.py
+SYNTAX PASS  24_phase_f10c_shareseq_namespace_normalized_audit.py
+SYNTAX PASS  25_phase_f11_shareseq_representations_branch_continuity.py
+SYNTAX PASS  26_phase_f12_shareseq_irs_freeze_rna_technical_rescue.py
+SYNTAX PASS  27_phase_f13_shareseq_irs_common_trajectory.py
+SYNTAX PASS  28_phase_f14_shareseq_irs_gdis_primary_profiles.py
+SYNTAX PASS  29_phase_f15_shareseq_irs_peak_topology_qc.py
+SYNTAX PASS  30_phase_f15b_shareseq_irs_sustained_plateau_transition_energy_qc.py
+SYNTAX PASS  31_phase_f16_shareseq_irs_transition_energy_pair_freeze.py
+SYNTAX PASS  32_phase_f17_shareseq_irs_frozen_pair_bootstrap.py
+SYNTAX PASS  33_phase_f18_shareseq_irs_cross_modal_alignment_null.py
+SYNTAX PASS  34_phase_f19_shareseq_irs_frozen_event_feature_extraction.py
+SYNTAX PASS  35_phase_f20_shareseq_irs_mm10_peak_gene_annotation.py
+SYNTAX PASS  36_phase_f21_shareseq_irs_motif_tf_regulatory_plausibility.py
+SYNTAX PASS  37_phase_f22_shareseq_irs_external_validation_evidence_freeze.py
+SYNTAX PASS  39_phase_f23b_shareseq_irs_publication_figure_revision.py
+SYNTAX PASS  40_phase_f24_discovery_publication_figure.py
+SYNTAX PASS  41_supplementary_figure_s1_discovery_diagnostics.py
+SYNTAX PASS  42_supplementary_figure_s2_discovery_alignment_null.py
+SYNTAX PASS  43_supplementary_figure_s3_gse205117_trajectory_suitability.py
+SYNTAX PASS  44_supplementary_figure_s4_tf_motif_enrichment.py
+SYNTAX PASS  45_main_figure_5_exact_circular_shift_null.py
+SYNTAX PASS  46_supplementary_figure_s5_shareseq_sustained_architecture.py
+SYNTAX PASS  47_supplementary_table_s4_shareseq_event_family_selection.py
+SYNTAX PASS  48_supplementary_table_s5_shareseq_branch_selection_qc.py
+EXCLUSION PASS  no superseded scripts in canonical scripts/
+VERSION PASS  no old version-suffixed scripts in canonical scripts/
+RUNNER PASS  all 47 referenced scripts exist
+PACKAGE PASS  required manifests/configuration files exist
+
+STATIC VALIDATION: PASS

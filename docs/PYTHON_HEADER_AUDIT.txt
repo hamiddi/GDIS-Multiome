@@ -1,0 +1,65 @@
+GDIS-Multiome Python Header Audit
+==================================
+
+Paper Title:
+GDIS-Multiome: A Dynamical Instability Framework for Resolving Cross-Modal
+State-Transition Architecture in Paired Single-Cell Multiomics
+
+Authors:
+Hamid Ismail, Ahmed Harb, Basem William, and Marwan Bikdash
+
+Python files checked: 49
+Python files containing standardized paper header: 49
+Header verification: PASS
+Syntax validation: PASS
+
+Files:
+  - run_pipeline.py
+  - scripts/00_preflight.py
+  - scripts/01_download_gse275562.py
+  - scripts/02_phase_f0_audit.py
+  - scripts/03_phase_f1_batch_representation_qc.py
+  - scripts/04_phase_f1b_representation_rescue_qc.py
+  - scripts/05_phase_f2_common_trajectory.py
+  - scripts/06_phase_f3_gdis_rna_atac.py
+  - scripts/07_phase_f3b_peak_topology_qc.py
+  - scripts/08_phase_f3c_transition_anchored_pairing_qc.py
+  - scripts/09_phase_f4_event_specific_cmil_bootstrap.py
+  - scripts/10_phase_f4b_peak_stability_diagnostics.py
+  - scripts/11_phase_f4c_event_region_timing_diagnostics.py
+  - scripts/12_phase_f5_cross_modal_alignment_null.py
+  - scripts/13_phase_f6a_external_metadata_acquisition.py
+  - scripts/14_phase_f6b_external_dataset_audit_corrected.py
+  - scripts/15_phase_f7_external_archive_pairing_qc.py
+  - scripts/16_phase_f7b_external_barcode_universe_diagnostic.py
+  - scripts/17_phase_f8_geo_native_reconstruction_qc_dynamicbins.py
+  - scripts/18_phase_f8b_external_representation_rescue_qc.py
+  - scripts/19_phase_f8c_external_primary_arm_freeze_qc.py
+  - scripts/20_phase_f9_external_common_trajectory.py
+  - scripts/21_phase_f9b_external_trajectory_topology_diagnostic.py
+  - scripts/22_phase_f10_shareseq_acquisition_canonical.py
+  - scripts/24_phase_f10c_shareseq_namespace_normalized_audit.py
+  - scripts/25_phase_f11_shareseq_representations_branch_continuity.py
+  - scripts/26_phase_f12_shareseq_irs_freeze_rna_technical_rescue.py
+  - scripts/27_phase_f13_shareseq_irs_common_trajectory.py
+  - scripts/28_phase_f14_shareseq_irs_gdis_primary_profiles.py
+  - scripts/29_phase_f15_shareseq_irs_peak_topology_qc.py
+  - scripts/30_phase_f15b_shareseq_irs_sustained_plateau_transition_energy_qc.py
+  - scripts/31_phase_f16_shareseq_irs_transition_energy_pair_freeze.py
+  - scripts/32_phase_f17_shareseq_irs_frozen_pair_bootstrap.py
+  - scripts/33_phase_f18_shareseq_irs_cross_modal_alignment_null.py
+  - scripts/34_phase_f19_shareseq_irs_frozen_event_feature_extraction.py
+  - scripts/35_phase_f20_shareseq_irs_mm10_peak_gene_annotation.py
+  - scripts/36_phase_f21_shareseq_irs_motif_tf_regulatory_plausibility.py
+  - scripts/37_phase_f22_shareseq_irs_external_validation_evidence_freeze.py
+  - scripts/39_phase_f23b_shareseq_irs_publication_figure_revision.py
+  - scripts/40_phase_f24_discovery_publication_figure.py
+  - scripts/41_supplementary_figure_s1_discovery_diagnostics.py
+  - scripts/42_supplementary_figure_s2_discovery_alignment_null.py
+  - scripts/43_supplementary_figure_s3_gse205117_trajectory_suitability.py
+  - scripts/44_supplementary_figure_s4_tf_motif_enrichment.py
+  - scripts/45_main_figure_5_exact_circular_shift_null.py
+  - scripts/46_supplementary_figure_s5_shareseq_sustained_architecture.py
+  - scripts/47_supplementary_table_s4_shareseq_event_family_selection.py
+  - scripts/48_supplementary_table_s5_shareseq_branch_selection_qc.py
+  - validate_pipeline_package.py

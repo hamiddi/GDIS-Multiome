@@ -1,0 +1,35 @@
+name: Reproducibility bug
+description: Report an installation, data, runtime, or replication problem.
+title: "[Bug]: "
+labels: ["bug", "reproducibility"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please provide enough information to reproduce the problem."
+  - type: input
+    id: phase
+    attributes:
+      label: Script / phase
+      placeholder: "e.g., 32_phase_f17_shareseq_irs_frozen_pair_bootstrap.py"
+  - type: textarea
+    id: command
+    attributes:
+      label: Command used
+      render: shell
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+  - type: textarea
+    id: error
+    attributes:
+      label: Error or unexpected result
+      render: text
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context

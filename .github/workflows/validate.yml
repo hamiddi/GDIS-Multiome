@@ -1,0 +1,26 @@
+name: Validate canonical pipeline
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  static-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python sources
+        run: |
+          python -m compileall -q scripts run_pipeline.py validate_pipeline_package.py
+
+      - name: Validate canonical package
+        run: |
+          python validate_pipeline_package.py

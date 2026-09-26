@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated GDIS-Multiome paper and this repository."
+title: "GDIS-Multiome canonical reproducibility pipeline"
+type: software
+authors:
+  - family-names: "Ismail"
+    given-names: "Hamid"
+  - family-names: "Harb"
+    given-names: "Ahmed"
+  - family-names: "William"
+    given-names: "Basem"
+  - family-names: "Bikdash"
+    given-names: "Marwan"
+abstract: "Canonical reproducibility pipeline for GDIS-Multiome analysis of cross-modal dynamical instability in paired single-cell RNA and chromatin-accessibility trajectories."
+keywords:
+  - single-cell multiomics
+  - scRNA-seq
+  - scATAC-seq
+  - SHARE-seq
+  - pseudotime
+  - dynamical instability
+  - GDIS
+  - reproducibility

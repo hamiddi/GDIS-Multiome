@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated / downloaded scientific data
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+figures/
+results/
+*.h5mu
+*.h5ad
+*.loom
+*.mtx
+*.mtx.gz
+*.tar
+*.tar.gz
+*.2bit
+*.bed.gz
+*.csv.gz
+*.tsv.gz
+
+# Temporary files
+*.tmp
+*.part
+*.download
+
+# Local environment files
+.env
+.env.*

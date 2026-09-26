@@ -1,0 +1,21 @@
+name: Scientific or software extension
+description: Propose a new dataset, modality, analysis extension, or repository improvement.
+title: "[Proposal]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What problem would this extension solve?
+    validations:
+      required: true
+  - type: textarea
+    id: canonical
+    attributes:
+      label: Relationship to canonical manuscript replication
+      description: Explain whether this is separate from or changes the frozen manuscript workflow.
+  - type: textarea
+    id: plan
+    attributes:
+      label: Proposed implementation

@@ -1,0 +1,16 @@
+script	reason
+13_phase_f6_external_dataset_audit.py	Superseded all-in-one preliminary F6 audit; canonical acquisition and corrected audit are F6a + corrected F6b.
+14_phase_f6b_external_dataset_audit.py	Invalid heuristic field selection (sample interpreted as stage; genotype as cell type); replaced by corrected F6b.
+17_phase_f8_external_representation_acquisition_qc.py	Author-processed representation acquisition depended on inaccessible outbound FTP; replaced by GEO-native reconstruction.
+17_phase_f8_external_representation_acquisition_qc_v2.py	Byte-identical duplicate of the inaccessible-FTP F8 acquisition script.
+17_phase_f8_geo_native_reconstruction_qc.py	Initial GEO-native reconstruction; superseded by contig-fix and then dynamic-bin final version.
+17_phase_f8_geo_native_reconstruction_qc_contigfix.py	Intermediate reconstruction; superseded by final dynamic-bin implementation.
+22_phase_f10_shareseq_acquisition_audit.py	Download code was useful, but its audit/parser assumptions produced a false review; replaced by acquisition-only canonical F10 plus F10c audit.
+23_phase_f10b_shareseq_format_corrected_audit.py	Intermediate format correction; barcode namespace normalization was not yet final.
+38_phase_f23_shareseq_irs_publication_figures.py	Superseded by final presentation-only F23b revision, which uses the primary 400/100 frozen event locations and improved labels.
+40_phase_f24_discovery_publication_figure.py	Superseded source content; replaced by v3 content under this clean canonical filename.
+40_phase_f24_discovery_publication_figure_v2.py	Superseded by v3.
+41_supplementary_figure_s1_discovery_diagnostics.py	Superseded source content; replaced by v4 content under this clean canonical filename.
+41_supplementary_figure_s1_discovery_diagnostics_v2.py	Superseded by v4.
+41_supplementary_figure_s1_discovery_diagnostics_v3.py	Superseded by v4.
+42_supplementary_figure_s2_discovery_alignment_null.py	Superseded source content; replaced by v2 content under this clean canonical filename.
