@@ -27,23 +27,23 @@ The workflow is designed to reduce circularity: RNA and ATAC are represented ind
 ```mermaid
 flowchart TD
 
-    A[Paired RNA + ATAC data]
-    B[Pairing and quality control]
-    C[Separate RNA and ATAC state spaces]
-    D[RNA-only developmental clock]
-    E[Matched sliding windows]
+    A["Paired RNA + ATAC<br/>data"]
+    B["Pairing and<br/>quality control"]
+    C["Separate RNA and ATAC<br/>state spaces"]
+    D["RNA-only developmental<br/>clock"]
+    E["Matched sliding<br/>windows"]
 
-    F1[RNA GDIS / transition energy]
-    F2[ATAC GDIS / transition energy]
+    F1["RNA GDIS /<br/>transition energy"]
+    F2["ATAC GDIS /<br/>transition energy"]
 
-    G[Independent event-family definition]
-    H[Frozen cross-modal event pair]
+    G["Independent event-family<br/>definition"]
+    H["Frozen cross-modal<br/>event pair"]
 
-    I[CMIL + paired bootstrap]
-    J[Broad alignment null model]
+    I["CMIL + paired<br/>bootstrap"]
+    J["Broad alignment<br/>null model"]
 
-    K[Mechanistic follow-up]
-    L[Evidence freeze + publication outputs]
+    K["Mechanistic<br/>follow-up"]
+    L["Evidence freeze +<br/>publication outputs"]
 
     A --> B
     B --> C
@@ -63,11 +63,11 @@ flowchart TD
 
 ### Cross-modal instability lag
 
-For a frozen RNA event at pseudotime \(\tau_{\mathrm{RNA}}\) and ATAC event at \(\tau_{\mathrm{ATAC}}\):
+For a frozen RNA event at pseudotime $\tau_{\mathrm{RNA}}$ and ATAC event at $\tau_{\mathrm{ATAC}}$:
 
-\[
+```math
 \mathrm{CMIL} = \tau_{\mathrm{RNA}} - \tau_{\mathrm{ATAC}}
-\]
+```
 
 Positive CMIL indicates an earlier ATAC event, values near zero indicate approximate synchrony, and negative CMIL indicates an earlier RNA event.
 
