@@ -25,28 +25,49 @@ GDIS-Multiome extends the **Generalized Dynamical Instability Score (GDIS)** to 
 The workflow is designed to reduce circularity: RNA and ATAC are represented independently, the common developmental clock is constructed from RNA only, identical paired cells are evaluated in matched pseudotime windows, event families are frozen independently within each modality, and directional timing is tested only after event identity has been fixed.
 
 ```mermaid
-flowchart LR
-    A[Paired RNA + ATAC data] --> B[Pairing and quality control]
-    B --> C[Separate RNA and ATAC state spaces]
-    C --> D[RNA-only developmental clock]
-    D --> E[Matched sliding windows]
-    E --> F1[RNA GDIS / transition energy]
-    E --> F2[ATAC GDIS / transition energy]
-    F1 --> G[Independent event-family definition]
+flowchart TD
+
+    A[Paired RNA + ATAC data]
+    B[Pairing and quality control]
+    C[Separate RNA and ATAC state spaces]
+    D[RNA-only developmental clock]
+    E[Matched sliding windows]
+
+    F1[RNA GDIS / transition energy]
+    F2[ATAC GDIS / transition energy]
+
+    G[Independent event-family definition]
+    H[Frozen cross-modal event pair]
+
+    I[CMIL + paired bootstrap]
+    J[Broad alignment null model]
+
+    K[Mechanistic follow-up]
+    L[Evidence freeze + publication outputs]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F1
+    E --> F2
+    F1 --> G
     F2 --> G
-    G --> H[Frozen cross-modal event pair]
-    H --> I[CMIL + paired bootstrap]
-    H --> J[Broad alignment null model]
-    I --> K[Mechanistic follow-up]
+    G --> H
+    H --> I
+    H --> J
+    I --> K
     J --> K
-    K --> L[Evidence freeze + publication outputs]
+    K --> L
 ```
 
 ### Cross-modal instability lag
 
-For a frozen RNA event at pseudotime `tau_RNA` and ATAC event at `tau_ATAC`:
+For a frozen RNA event at pseudotime \(\tau_{\mathrm{RNA}}\) and ATAC event at \(\tau_{\mathrm{ATAC}}\):
 
-**CMIL = tau_RNA - tau_ATAC**
+\[
+\mathrm{CMIL} = \tau_{\mathrm{RNA}} - \tau_{\mathrm{ATAC}}
+\]
 
 Positive CMIL indicates an earlier ATAC event, values near zero indicate approximate synchrony, and negative CMIL indicates an earlier RNA event.
 
